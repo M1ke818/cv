@@ -1,5 +1,18 @@
 @mixin textos($tamanio,$grosor,$alineacion){
   font-size: $tamanio;
   font-weight: $grosor;
-  text-align: $alineacion;
+  @if($alineacion){
+     text-align: center;
+  }
+}
+
+@mixin basicos($ancho,$alto,$padding){
+  width:$ancho;
+  height: $alto;
+  padding: $padding;
+}
+
+@mixin flex($direccion,$wrap){
+  display: flex;
+  flex-flow: $direccion $wrap;
 }

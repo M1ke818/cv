@@ -1,5 +1,60 @@
 /* ------------------LETRAS-------------------- */
 /* ------------------COLORES-------------------- */
+/* ------------------LETRAS-------------------- */
+/* ------------------COLORES-------------------- */
+.header {
+  width: 100vw;
+  height: 3.5rem;
+  padding: 0.5rem 2rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 990;
+  background-color: #91F2E9;
+}
+.header .header__inicio {
+  color: #275950;
+  letter-spacing: 0.2rem;
+}
+
+/* ------------------LETRAS-------------------- */
+/* ------------------COLORES-------------------- */
+.hamburger {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #91F2E9;
+  border-width: 0;
+  justify-content: center;
+  align-content: space-evenly;
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+  z-index: 1000;
+}
+.hamburger div {
+  width: 80%;
+  height: 15%;
+  padding: 0;
+  background-color: #275950;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transform-origin: 100% 0;
+}
+.hamburger div.top--isActive {
+  transform: translate(-25%, -30%) rotateZ(-50deg);
+}
+.hamburger div.center--isActive {
+  opacity: 0;
+}
+.hamburger div.bottom--isActive {
+  transform: translate(-10%, 25%) rotateZ(50deg);
+}
+
 html {
   box-sizing: border-box;
   margin: 0;

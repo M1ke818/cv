@@ -1,0 +1,42 @@
+@import './variables';
+@import './mixins';
+
+
+.hamburger{
+  @include basicos(1.5rem,1.5rem,0);
+  @include flex(row,wrap);
+  background-color: $colorprimario;
+  border-width: 0;
+  justify-content: center;
+  align-content: space-evenly;
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+  z-index: 1000;
+
+  
+  div{
+    @include basicos(80%,15%,0);
+    background-color: $colorsecundario;
+    transition:transform .5s ease, opacity .5s ease;
+    transform-origin: 100% 0;
+
+    &.top--isActive{
+      transform:translate(-25%, -30%) rotateZ(-50deg);
+    }
+    
+    &.center--isActive{
+      opacity:0;
+    }
+    
+    
+    &.bottom--isActive{
+      transform: translate(-10%, 25%) rotateZ(50deg);
+    }
+  }
+}
+
+
+
+
+

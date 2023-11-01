@@ -1,5 +1,7 @@
 @import './scss/variables';
 @import './scss/mixins';
+@import './scss/header';
+@import './scss/hamburguesa';
 
 html{
   box-sizing: border-box;
@@ -18,22 +20,22 @@ html{
   body{
     overflow-x: hidden;
     h1{
-      @include textos(clamp(40px,8vw,56px),$letragruesa,center);
+      @include textos(clamp(40px,8vw,56px),$letragruesa,'true');
       text-transform: uppercase;
     }
     
      h2{
-      @include textos(clamp(32px,7vw,40px),$letranormal,center);
+      @include textos(clamp(32px,7vw,40px),$letranormal,'true');
       font-variant: small-caps;
     }
     
     h3{
-      @include textos(clamp(28px,5vw,32px),$letranormal,center);
+      @include textos(clamp(28px,5vw,32px),$letranormal,'false');
       font-variant: small-caps;
     }
     
     h4{
-      @include textos(clamp(24px,4vw,28px),$letranormal,center);
+      @include textos(clamp(24px,4vw,28px),$letranormal,'false');
       font-variant: small-caps;
     }
 
