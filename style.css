@@ -1,0 +1,49 @@
+/* ------------------LETRAS-------------------- */
+/* ------------------COLORES-------------------- */
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+html *,
+html *::before,
+html *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+html body {
+  overflow-x: hidden;
+}
+html body h1 {
+  font-size: clamp(40px, 8vw, 56px);
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+html body h2 {
+  font-size: clamp(32px, 7vw, 40px);
+  font-weight: 400;
+  text-align: center;
+  font-variant: small-caps;
+}
+html body h3 {
+  font-size: clamp(28px, 5vw, 32px);
+  font-weight: 400;
+  text-align: center;
+  font-variant: small-caps;
+}
+html body h4 {
+  font-size: clamp(24px, 4vw, 28px);
+  font-weight: 400;
+  text-align: center;
+  font-variant: small-caps;
+}
+html body img {
+  max-width: 100%;
+  height: auto;
+}
+html body a {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,51 @@
+@import './scss/variables';
+@import './scss/mixins';
+
+html{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  
+  *,
+  *::before,
+  *::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    overflow-x: hidden;
+    h1{
+      @include textos(clamp(40px,8vw,56px),$letragruesa,center);
+      text-transform: uppercase;
+    }
+    
+     h2{
+      @include textos(clamp(32px,7vw,40px),$letranormal,center);
+      font-variant: small-caps;
+    }
+    
+    h3{
+      @include textos(clamp(28px,5vw,32px),$letranormal,center);
+      font-variant: small-caps;
+    }
+    
+    h4{
+      @include textos(clamp(24px,4vw,28px),$letranormal,center);
+      font-variant: small-caps;
+    }
+
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+  }
+
+}

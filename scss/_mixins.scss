@@ -1,0 +1,5 @@
+@mixin textos($tamanio,$grosor,$alineacion){
+  font-size: $tamanio;
+  font-weight: $grosor;
+  text-align: $alineacion;
+}
