@@ -16,3 +16,19 @@
   display: flex;
   flex-flow: $direccion $wrap;
 }
+
+@mixin contenedor{
+  width: 100vw;
+  height: 100vh;
+  padding: 3.5rem 1rem 1rem 1rem;
+}
+
+@mixin btn($ancho,$bordeColor,$bgColor){
+  width: $ancho;
+  height: 2rem;
+  border: 0.2rem solid $bordeColor;
+  background-color: $bgColor;
+  box-shadow: 0.4rem 0.4rem $bordeColor;
+  border-radius: 1rem 0;
+  align-self: center;
+ }
