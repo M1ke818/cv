@@ -1,0 +1,33 @@
+@import './mixins';
+@import './variables';
+
+.inicio{
+ background-color: $colorprimario;
+ @include contenedor;
+ @include flex(column, wrap);
+ justify-content: space-evenly;
+ color: $colorsecundario;
+ align-items: center;
+
+ .inicio__subtitulo{
+    padding-bottom: 5rem;
+ }
+
+ .inicio__titulo{
+    letter-spacing:clamp(.5rem,2vw,1rem);
+    text-shadow: 0.1rem 0.1rem 1.5rem $colorblanco;
+    line-height: 2rem;
+  }
+  
+  .inicio__texto{
+    word-spacing: .5rem;
+    padding: 0 5rem 4rem 5rem;
+    text-align: center;
+ }
+
+  .inicio__boton{
+    @include btn(5rem,$colorsecundario, $colorprimario);
+    color: inherit;
+  }
+
+}

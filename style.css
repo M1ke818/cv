@@ -80,11 +80,50 @@
   color: #F0FFFF;
 }
 
+/* ------------------LETRAS-------------------- */
+/* ------------------COLORES-------------------- */
+.inicio {
+  background-color: #91F2E9;
+  width: 100vw;
+  height: 100vh;
+  padding: 3.5rem 1rem 1rem 1rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  color: #275950;
+  align-items: center;
+}
+.inicio .inicio__subtitulo {
+  padding-bottom: 5rem;
+}
+.inicio .inicio__titulo {
+  letter-spacing: clamp(0.5rem, 2vw, 1rem);
+  text-shadow: 0.1rem 0.1rem 1.5rem #F0FFFF;
+  line-height: 2rem;
+}
+.inicio .inicio__texto {
+  word-spacing: 0.5rem;
+  padding: 0 5rem 4rem 5rem;
+  text-align: center;
+}
+.inicio .inicio__boton {
+  width: 5rem;
+  height: 2rem;
+  border: 0.2rem solid #275950;
+  background-color: #91F2E9;
+  box-shadow: 0.4rem 0.4rem #275950;
+  border-radius: 1rem 0;
+  align-self: center;
+  color: inherit;
+}
+
 html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Josefin Sans", sans-serif;
+  scroll-padding-top: 3.5rem;
+  scroll-behavior: smooth;
 }
 html *,
 html *::before,
@@ -112,13 +151,11 @@ html body h3 {
   font-size: clamp(28px, 5vw, 32px);
   font-weight: 400;
   text-align: center;
-  font-variant: small-caps;
 }
 html body h4 {
   font-size: clamp(24px, 4vw, 28px);
   font-weight: 400;
   text-align: center;
-  font-variant: small-caps;
 }
 html body img {
   max-width: 100%;
