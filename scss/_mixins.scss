@@ -32,3 +32,9 @@
   border-radius: 1rem 0;
   align-self: center;
  }
+
+ @mixin grid($columnas,$filas){
+  display: grid;
+  grid-template-columns: $columnas;
+  grid-template-rows: $filas;
+}

@@ -1,0 +1,68 @@
+@import './mixins';
+@import './variables';
+
+.sobre-mi{
+  @include contenedor;
+  @include grid(repeat(12,8%),repeat(12,1fr));
+  align-items: center;
+  justify-items: center;
+  background-color: $colorsecundario;
+  color:$colorprimario;
+
+  .sobre-mi__titulo{
+    grid-column: span 12;
+    grid-row: span 2;
+    letter-spacing: 1rem;
+  }
+  
+  .sobre-mi__figure{
+    grid-column: span 12;
+    grid-row: span 3;
+    width: 9rem;
+    height: auto;
+  }
+  
+  .sobre-mi__nombre{
+    grid-column: span 12;
+    grid-row: span 1;
+  }
+  
+  .sobre-mi__lista{
+    grid-column: span 12;
+    grid-row: span 6;
+    gap: 1rem;
+    @include grid(repeat(2,auto-fit),repeat(2,auto-fit));
+    list-style: none;
+    text-align: center;
+    
+    
+    %elementosLista{
+      padding: .5rem 0;
+      border-radius: 1rem;
+      b{
+        font-size: 2.5rem;
+      }
+    }
+    
+    li:nth-child(1){
+      @extend %elementosLista;
+      background-color: $colorprimario;
+      color: $colorsecundario;
+    }
+
+    li:nth-child(2){
+      @extend %elementosLista;
+      background-color: $colortres;
+      color: $colorprimario;
+    }
+    
+    li:nth-child(3){
+      @extend %elementosLista;
+      background-color: $colorcuarto;
+      color: $colorprimario;
+      grid-column:1/3;
+      grid-row: 3/4;
+    }
+
+  }
+}
