@@ -178,12 +178,74 @@
   grid-row: 3/4;
 }
 
+/* ------------------LETRAS-------------------- */
+/* ------------------COLORES-------------------- */
+.cv .cv__otros, .cv .cv__cursos, .cv .cv__idiomas {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px groove #260101;
+  border-radius: 2rem;
+  margin: 0.5rem 0.5rem;
+}
+
+.cv {
+  width: 100vw;
+  height: 100vh;
+  padding: 3.5rem 1rem 1rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(12, 8%);
+  grid-template-rows: repeat(12, 8%);
+  background-color: #F0FFFF;
+}
+.cv .cv__titulo {
+  letter-spacing: 0.7rem;
+  grid-column: span 12;
+  grid-row: span 2;
+  align-self: center;
+  color: #260101;
+}
+.cv .cv__frontend {
+  grid-column: span 12;
+  grid-row: span 4;
+  display: flex;
+  flex-flow: row wrap;
+  align-self: stretch;
+  align-items: space-evenly;
+  justify-content: space-evenly;
+  border: 1px groove #260101;
+  border-radius: 2rem;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+}
+.cv .cv__frontend h2 {
+  width: 100%;
+}
+.cv .cv__idiomas {
+  grid-column: span 12;
+  grid-row: span 3;
+}
+.cv .cv__cursos {
+  grid-column: span 6;
+  grid-row: span 3;
+}
+.cv .cv__otros {
+  grid-column: span 6;
+  grid-row: span 3;
+}
+.cv .cv--icono {
+  font-size: 3rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  color: #275950;
+}
+
 html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Josefin Sans", sans-serif;
-  scroll-padding-top: 3.5rem;
   scroll-behavior: smooth;
 }
 html *,
@@ -194,6 +256,7 @@ html *::after {
   padding: 0;
 }
 html body {
+  scroll-padding-top: 3.5rem;
   overflow-x: hidden;
 }
 html body h1 {

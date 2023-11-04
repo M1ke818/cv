@@ -5,13 +5,13 @@
 @import './scss/menu';
 @import './scss/inicio';
 @import './scss/sobre_mi';
+@import './scss/cv';
 
 html{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Josefin Sans', sans-serif;
-  scroll-padding-top:3.5rem;
   scroll-behavior: smooth;
   
   *,
@@ -23,6 +23,7 @@ html{
   }
   
   body{
+    scroll-padding-top:3.5rem;
     overflow-x: hidden;
     h1{
       @include textos(clamp(40px,8vw,56px),$letragruesa,'true');

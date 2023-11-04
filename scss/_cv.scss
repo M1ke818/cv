@@ -1,0 +1,76 @@
+@import './variables';
+@import './mixins';
+
+%flexAlineacion{
+  @include flex(column,wrap);
+    align-items: center;
+    justify-content: space-evenly;
+    border:1px groove $colornegro;
+    border-radius: 2rem;
+    margin: 0.5rem 0.5rem;
+ }
+
+
+.cv{
+  @include contenedor;
+  @include grid(repeat(12,8%),repeat(12,8%));
+  background-color:$colorblanco;
+  
+
+  .cv__titulo{
+    letter-spacing: .7rem;
+    grid-column: span 12;
+    grid-row: span 2;
+    align-self: center;
+    color: $colornegro;
+  }
+
+
+  .cv__frontend{
+    grid-column: span 12;
+    grid-row: span 4;
+    @include flex(row,wrap);
+    align-self: stretch;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+    border:1px groove $colornegro;
+    border-radius: 2rem;
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+
+    h2{
+      width: 100%;
+    }
+    
+  }
+
+
+  .cv__idiomas{
+    @extend %flexAlineacion;
+    grid-column: span 12;
+    grid-row: span 3;
+  }
+
+  
+  .cv__cursos{
+    @extend %flexAlineacion;
+    grid-column: span 6;
+    grid-row: span 3;
+  }
+
+
+  .cv__otros{
+    @extend %flexAlineacion;
+    grid-column: span 6;
+    grid-row: span 3;
+  }
+
+
+  .cv--icono{
+    font-size: 3rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    color:$colorsecundario;
+  }
+}
+
