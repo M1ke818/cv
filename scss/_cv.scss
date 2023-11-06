@@ -31,7 +31,6 @@
     grid-row: span 4;
     @include flex(row,wrap);
     align-self: stretch;
-    align-items: space-evenly;
     justify-content: space-evenly;
     border:1px groove $colornegro;
     border-radius: 2rem;
@@ -73,4 +72,122 @@
     color:$colorsecundario;
   }
 }
+
+/*-------------------------------------ventana modal--------------------------------------  */
+
+
+.modal{
+  background-color:$colorsecundario;
+  @include basicos(90vw,90vh,2rem 0.5rem);
+    border-radius: 4rem 0;
+    margin: auto;
+  
+  &.modal::backdrop{
+      background-color: $colornegro;
+      opacity: 0.5;
+  }
+
+  .modal__cerrar{
+    @include basicos(3rem,1.5rem,0.1rem);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: $colornegro;
+    color: $colorprimario;
+    border-radius: 2rem;
+    border: 2px solid $colorprimario;
+  }
+
+  .modal__seccion{
+    @include flex(column,wrap);
+    align-items: center;
+
+
+    .modal__titulo{
+      color: $colorprimario;
+      font-weight: bold;
+    }
+
+    .modal__nivel{
+      color: $colorsecundario;
+      text-shadow: 1.5px 0px 3px $colorprimario,0px 1.5px 3px $colorprimario,-1.5px 0px 3px $colorprimario,0px -1.5px 3px $colorprimario;
+      font-weight: bold;
+      letter-spacing: 0.5rem;
+    }
+  }
+}
+
+/* ----------------------------------------modal seccion FRONT-END------------------------------------------- */
+.modal{
+  .modal__seccion{
+    .modal__codigo-entrada{
+      width: 95%;
+      background-color: black;
+      color: rgb(255, 255, 255);
+      margin-bottom: 2rem;
+      white-space: pre-wrap;
+      padding: 1rem 0;
+      font-size: 1rem;
+      line-height: 2rem;
+      word-break: break-word;
+      
+        span{
+          color:$colorprimario;
+        }
+    }
+
+    .modal__codigo-salida{
+      @include flex(row,wrap);
+      justify-content: space-evenly;
+      align-content: center;
+      background-color: $colorblanco;
+  
+      img{
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+/*---------------------------------------------modal seccion idio,as,cursos,otros---------------------------  */
+.modal{
+
+  .modal--porcentajes{
+    @include grid(repeat(auto-fit,4rem 10rem),repeat(auto-fit,5rem));
+    gap:1rem 0;
+    @include basicos(70vw,70vh,0);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+
+    img{
+      width: 75%;
+      height: auto;
+    }
+
+    .modal__contenedor-porcentaje{
+      background-color:$colornegro;
+      border-radius: 50px;
+      width: 95%;
+      height: 30px;
+
+      .modal__barra-porcentaje{
+        height:inherit;
+        border-radius: 50px;
+        background-color: $colorprimario;
+        transform-origin: 0% 0%;
+      }
+    }
+
+   
+  }
+  .modal--cursos{
+    width: 95%;
+    height: 3rem;
+    color: $colorprimario;
+  }
+}
+
+
 

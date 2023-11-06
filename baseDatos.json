@@ -3,11 +3,11 @@
   "id":1,
   "nombre":"html",
   "nivel":"avanzado",
-  "codigo":"\n&lt;<span>html</span>&gt; \n  &lt;<span>h1</span>&gt;&lt;<span>b</span>&gt;Semántica&lt;&#47;<span>b</span>&gt;&lt;&#47;<span>h1</span>&gt; \n  &lt;<span>section</span>&gt;section \n    &lt;<span>main</span>&gt;main&lt;&#47;<span>main</span>&gt; \n    &lt;<span>article</span>&gt;article&lt;&#47;<span>article</span>&gt; \n    &lt;<span>article</span>&gt;article&lt;&#47;<span>article</span>&gt; \n  &lt;&#47;<span>section</span>&gt; \n  &lt;<span>aside</span>&gt;aside&lt;&#47;<span>aside</span>&gt; \n  &lt;<span>footer</span>&gt;footer&lt;&#47;<span>footer</span>&gt; \n&lt;&#47;<span>html</span>&gt;\n",
+  "codigo":"&lt;<span>html</span>&gt; \n  &lt;<span>h1</span>&gt;&lt;<span>b</span>&gt;Semántica&lt;&#47;<span>b</span>&gt;&lt;&#47;<span>h1</span>&gt; \n  &lt;<span>section</span>&gt;section \n    &lt;<span>main</span>&gt;main&lt;&#47;<span>main</span>&gt; \n    &lt;<span>article</span>&gt;article&lt;&#47;<span>article</span>&gt; \n    &lt;<span>article</span>&gt;article&lt;&#47;<span>article</span>&gt; \n  &lt;&#47;<span>section</span>&gt; \n  &lt;<span>aside</span>&gt;aside&lt;&#47;<span>aside</span>&gt; \n  &lt;<span>footer</span>&gt;footer&lt;&#47;<span>footer</span>&gt; \n&lt;&#47;<span>html</span>&gt;\n",
   "apps":{
     "html":{
       "porcentaje":85,
-      "imagen":["../assets/estructura_html.png"]
+      "imagen":["./assets/estructura_html.png"]
       }
     }
   },
@@ -15,23 +15,23 @@
     "id":2,
     "nombre":"css",
     "nivel":"intermedio",
-    "codigo":"<pre>\n.conocimientoEn&#123;\n  <p>css</p>&#123;\n    conocimiento:intermedio;  \n  &#125;\n  <p>sass</p>&#123;\n    conocimiento:intermedio;  \n  &#125;\n  <p>bootstrap</p>&#123;\n    conocimiento:intermedio;  \n  &#125;\n  <p>metodologiaBEM</p>&#123;\n    conocimiento:intermedio;  \n  &#125;\n  <p>mediasQueries</p>&#123;\n    conocimiento:intermedio;  \n  &#125; \n&#125;\n</pre>",
+    "codigo":".conocimientoEn&#123;\n  <span>css</span>&#123;\n    conocimiento:intermedio;  \n  &#125;\n  <span>sass</span>&#123;\n    conocimiento:intermedio;  \n  &#125;\n  <span>bootstrap</span>&#123;\n    conocimiento:intermedio;  \n  &#125;\n  <span>metodologiaBEM</span>&#123;\n    conocimiento:intermedio;  \n  &#125;\n  <span>mediasQueries</span>&#123;\n    conocimiento:intermedio;  \n  &#125; \n&#125;\n",
     "apps":{
       "css":{
         "porcentaje":80,
-        "imagen":["../assets/css3_100x100.png"]
+        "imagen":["./assets/css3_100x100.png"]
         },
       "sass":{
         "porcentaje":80,
-        "imagen":["../assets/sass_133x100.png"]
+        "imagen":["./assets/sass_133x100.png"]
         },
       "bootstrap":{
         "porcentaje":45,
-        "imagen":["../assets/bootstrap_121x120.png"]
+        "imagen":["./assets/bootstrap_121x120.png"]
         },
       "bem":{
         "porcentaje":40,
-        "imagen":["../assets/bem_148x100.png"]
+        "imagen":["./assets/bem_148x100.png"]
         }
       }
     },
@@ -39,15 +39,15 @@
       "id":3,
       "nombre":"javascript",
       "nivel":"intermedio",
-      "codigo":"<pre>\nconst nivel&#61;\n  <span>js</span>&#58;&#91;\n    &#34;condicionales&#34;,&#34;loops&#34;\n    &#34;destructuracion&#34;,&#34;clases&#34;,\n    &#34;json&#34;,&#34;manejadoresEventos&#34;,\n    &#34;flujoEventos&#34;,&#34;ajax&#34;,&#34;restAPI&#34;\n    &#93;,\n  <span>react</span>&#58;&#91;\n    &#34;JSX&#34;,\n      <span>componentes</span>&#58;\n        &#91;&#34;clase&#34;,&#34;funcion&#34;&#93;,\n      <span>hooks</span>&#58;\n        &#91;&#34;useState&#34;,&#34;useEffect&#34;&#93;,\n      &#34;ReactRouter&#34;\n      &#93;\n\n\n\nconst javascript&#61;&#40;nivel&#41;&#61;&#62;&#123;\n  if&#40;nivel.hasOwnProperty&#40;&#34;js&#34;&#41;\n    &#38;&#38;\n    nivels.hasOwnProperty&#40;&#34;react&#34;&#41;&#41;&#123;\n      document.getElementById&#40;&#34;img-js&#34;&#41;\n        .style.visibility&#61;&#39;visible&#39;\n      document.getElementById&#40;&#34;img-react&#34;&#41;\n        .style.visibility&#61;&#39;visible&#39;\n\njavascript&#40;nivel&#41; \n</pre>",
+      "codigo":"const nivel&#61;\n  <span>js</span>&#58;&#91;\n    &#34;condicionales&#34;,&#34;loops&#34;, &#34;destructuracion&#34;,&#34;clases&#34;, &#34;json&#34;,&#34;manejadoresEventos&#34;, &#34;flujoEventos&#34;,&#34;ajax&#34;,&#34;restAPI&#34;\n    &#93;,\n  <span>react</span>&#58;&#91;\n    &#34;JSX&#34;,\n      <span>componentes</span>&#58; &#91;&#34;clase&#34;, &#34;funcion&#34;&#93;,\n      <span>hooks</span>&#58; &#91;&#34;useState&#34;, &#34;useEffect&#34;&#93;,\n  &#34;ReactRouter&#34;\n    &#93;\n\n\nconst <span>javascript</span> &#61; &#40;nivel&#41; &#61;&#62;&#123;\n  if&#40;nivel.hasOwnProperty&#40;&#34;js&#34;&#41; &#38;&#38; nivel.hasOwnProperty&#40;&#34;react&#34;&#41;&#41;&#123;\n\ndocument.getElementById&#40;&#34;img-js&#34;&#41;.style.visibility&#61;&#39;visible&#39;\n      document.getElementById&#40;&#34;img-react&#34;&#41;.style.visibility&#61;&#39;visible&#39;\n&#125;\n\njavascript&#40;nivel&#41;",
       "apps":{
         "javascript":{
           "porcentaje":60,
-          "imagen":["../assets/js_100x100.png"]
+          "imagen":["./assets/js_100x100.png"]
           },
         "react":{
           "porcentaje":45,
-          "imagen":["../assets/react_92x100.png"]
+          "imagen":["./assets/react_92x100.png"]
           }
         }
       },
@@ -55,15 +55,15 @@
       "id":4,
       "nombre":"git",
       "nivel":"intermedio",
-      "codigo":"<pre>\nmiguel@DESKTOP MINGW64 &#126;&#47;Conocimientos&#47;GIT\n\n  &#36; ls\n\n  &#39;<span>flujo_básico</span>&#39;\n  &#39;<span>gitignore</span>&#39;\n  &#39;<span>ramas</span>&#39;\n  &#39;<span>historial_en_commits</span>&#39;\n  &#39;<span>etiquetas</span>&#39;\n  &#39;<span>github pages</span>&#39;\n\nmiguel@DESKTOP MINGW64 &#126;&#47;Conocimientos&#47;GIT\n\n  &#36;\n</pre>",
+      "codigo":"<pre>\nmiguel@DESKTOP MINGW64\n&#126;&#47;Conocimientos&#47;GIT\n\n  &#36; ls\n\n  &#39;<span>flujo_básico</span>&#39;\n  &#39;<span>gitignore</span>&#39;\n  &#39;<span>ramas</span>&#39;\n  &#39;<span>historial_en_commits</span>&#39;\n  &#39;<span>etiquetas</span>&#39;\n  &#39;<span>github pages</span>&#39;\n\nmiguel@DESKTOP MINGW64\n&#126;&#47;Conocimientos&#47;GIT\n\n  &#36;\n</pre>",
       "apps":{
         "git":{
           "porcentaje":50,
-          "imagen":["../assets/git_194x100.png"]
+          "imagen":["./assets/git_194x100.png"]
           },
         "github":{
           "porcentaje":50,
-          "imagen":["../assets/github_116x100.png"]
+          "imagen":["./assets/github_116x100.png"]
           }
         }
       },
@@ -75,19 +75,19 @@
         "apps":{
           "reading":{
             "porcentaje":90,
-            "imagen":["../assets/reading_100x100.png"]
+            "imagen":["./assets/reading_100x100.png"]
           },
           "listening":{
           "porcentaje":80,
-          "imagen":["../assets/listening_98x100.png"]
+          "imagen":["./assets/listening_98x100.png"]
           },
           "writing":{
           "porcentaje":50,
-          "imagen":["../assets/writing_100x100.png"]
+          "imagen":["./assets/writing_100x100.png"]
           },
           "speaking":{
           "porcentaje":40,
-          "imagen":["../assets/speaking_100x100.png"]
+          "imagen":["./assets/speaking_100x100.png"]
           }                        
         }
       },
@@ -99,23 +99,23 @@
         "apps":{
           "excel":{
             "porcentaje":75,
-            "imagen":["../assets/excel_100x100.png"]
+            "imagen":["./assets/excel_100x100.png"]
           },
           "photoShop":{
           "porcentaje":40,
-          "imagen":["../assets/photoshop_100x100.png"]
+          "imagen":["./assets/photoshop_100x100.png"]
           },
           "illustrator":{
           "porcentaje":40,
-          "imagen":["../assets/illustrator_105x100.png"]
+          "imagen":["./assets/illustrator_105x100.png"]
           },
           "premier":{
           "porcentaje":75,
-          "imagen":["../assets/premier_102x100.png"]
+          "imagen":["./assets/premier_102x100.png"]
           },
           "afterEffects":{
             "porcentaje":40,
-            "imagen":["../assets/after_effects_100x100.png"]
+            "imagen":["./assets/after_effects_100x100.png"]
             }                         
         }
       },
@@ -128,19 +128,19 @@
           "comercio electrónico":{
             "nombre":"Comercio Electrónico",
             "porcentaje":null,
-            "imagen":["../assets/google_100x100.png"],
+            "imagen":["./assets/google_100x100.png"],
             "lugar":"Google Actívate"
           },
           "inglés":{
             "nombre":"Inglés",
             "porcentaje":null,
-            "imagen":["../assets/ingles_100x100.png"],
+            "imagen":["./assets/ingles_100x100.png"],
             "lugar":"Edinburgh Institute"
           },
           "Fundamentos del Marketing":{
             "nombre":"Fundamentos del Marketing",
             "porcentaje":null,
-            "imagen":["../assets/google_100x100.png"],
+            "imagen":["./assets/google_100x100.png"],
             "lugar":"Google Actívate"
           }
                       

@@ -212,7 +212,6 @@
   display: flex;
   flex-flow: row wrap;
   align-self: stretch;
-  align-items: space-evenly;
   justify-content: space-evenly;
   border: 1px groove #260101;
   border-radius: 2rem;
@@ -239,6 +238,109 @@
   margin-right: 1.5rem;
   margin-left: 1.5rem;
   color: #275950;
+}
+
+/*-------------------------------------ventana modal--------------------------------------  */
+.modal {
+  background-color: #275950;
+  width: 90vw;
+  height: 90vh;
+  padding: 2rem 0.5rem;
+  border-radius: 4rem 0;
+  margin: auto;
+}
+.modal.modal::backdrop {
+  background-color: #260101;
+  opacity: 0.5;
+}
+.modal .modal__cerrar {
+  width: 3rem;
+  height: 1.5rem;
+  padding: 0.1rem;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #260101;
+  color: #91F2E9;
+  border-radius: 2rem;
+  border: 2px solid #91F2E9;
+}
+.modal .modal__seccion {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.modal .modal__seccion .modal__titulo {
+  color: #91F2E9;
+  font-weight: bold;
+}
+.modal .modal__seccion .modal__nivel {
+  color: #275950;
+  text-shadow: 1.5px 0px 3px #91F2E9, 0px 1.5px 3px #91F2E9, -1.5px 0px 3px #91F2E9, 0px -1.5px 3px #91F2E9;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+}
+
+/* ----------------------------------------modal seccion FRONT-END------------------------------------------- */
+.modal .modal__seccion .modal__codigo-entrada {
+  width: 95%;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  margin-bottom: 2rem;
+  white-space: pre-wrap;
+  padding: 1rem 0;
+  font-size: 1rem;
+  line-height: 2rem;
+  word-break: break-word;
+}
+.modal .modal__seccion .modal__codigo-entrada span {
+  color: #91F2E9;
+}
+.modal .modal__seccion .modal__codigo-salida {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  background-color: #F0FFFF;
+}
+.modal .modal__seccion .modal__codigo-salida img {
+  padding: 1rem;
+}
+
+/*---------------------------------------------modal seccion idio,as,cursos,otros---------------------------  */
+.modal .modal--porcentajes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 4rem 10rem);
+  grid-template-rows: repeat(auto-fit, 5rem);
+  gap: 1rem 0;
+  width: 70vw;
+  height: 70vh;
+  padding: 0;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+.modal .modal--porcentajes img {
+  width: 75%;
+  height: auto;
+}
+.modal .modal--porcentajes .modal__contenedor-porcentaje {
+  background-color: #260101;
+  border-radius: 50px;
+  width: 95%;
+  height: 30px;
+}
+.modal .modal--porcentajes .modal__contenedor-porcentaje .modal__barra-porcentaje {
+  height: inherit;
+  border-radius: 50px;
+  background-color: #91F2E9;
+  transform-origin: 0% 0%;
+}
+.modal .modal--cursos {
+  width: 95%;
+  height: 3rem;
+  color: #91F2E9;
 }
 
 html {
