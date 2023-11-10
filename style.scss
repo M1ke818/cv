@@ -26,6 +26,11 @@ html{
   
   body{
     scroll-padding-top:3.5rem;
+    
+    @include mediaquery(992px){
+      scroll-padding-top:5rem;
+    }
+
     overflow-x: hidden;
     h1{
       @include textos(clamp(40px,8vw,56px),$letragruesa,'true');

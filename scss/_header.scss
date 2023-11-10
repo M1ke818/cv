@@ -12,15 +12,52 @@
   z-index: 990;
   background-color:$colorprimario; 
 
- 
-
   .header__inicio{
     color:$colorsecundario;
     letter-spacing: 0.2rem;
-    
+  }
+
+  .header__nav{
+    display: none;
   }
 }
 
 
+
+/* -----------------------media query 992px------------------------------------------------ */
+
+
+@include mediaquery(992px){
+  
+  .header{
+    @include basicos(100vw,5rem, 0.5rem 5rem);
+
+
+    .header__inicio{
+      transition: letter-spacing 1s ease;
+      
+      &:hover{
+        letter-spacing: 0.4rem;
+        color: $colortres;
+      }
+    }
+    
+    .header__nav{
+      @include flex(row,wrap);
+      justify-content: flex-end;
+      width: 100%;
+      
+      .header__enlace{
+        padding: 0.5rem 1.5rem;
+
+        &:hover{
+          color:$colortres;
+          line-height: 2px;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
 
 

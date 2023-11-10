@@ -19,7 +19,39 @@
   color: #275950;
   letter-spacing: 0.2rem;
 }
+.header .header__nav {
+  display: none;
+}
 
+/* -----------------------media query 992px------------------------------------------------ */
+@media screen and (min-width: 992px) {
+  .header {
+    width: 100vw;
+    height: 5rem;
+    padding: 0.5rem 5rem;
+  }
+  .header .header__inicio {
+    transition: letter-spacing 1s ease;
+  }
+  .header .header__inicio:hover {
+    letter-spacing: 0.4rem;
+    color: #41BFB3;
+  }
+  .header .header__nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .header .header__nav .header__enlace {
+    padding: 0.5rem 1.5rem;
+  }
+  .header .header__nav .header__enlace:hover {
+    color: #41BFB3;
+    line-height: 2px;
+    font-size: 1.1rem;
+  }
+}
 /* ------------------LETRAS-------------------- */
 /* ------------------COLORES-------------------- */
 .hamburger {
@@ -36,6 +68,11 @@
   top: 1rem;
   right: 2rem;
   z-index: 1000;
+}
+@media screen and (min-width: 992px) {
+  .hamburger {
+    display: none;
+  }
 }
 .hamburger div {
   width: 80%;
@@ -393,6 +430,11 @@ html *::after {
 html body {
   scroll-padding-top: 3.5rem;
   overflow-x: hidden;
+}
+@media screen and (min-width: 992px) {
+  html body {
+    scroll-padding-top: 5rem;
+  }
 }
 html body h1 {
   font-size: clamp(40px, 8vw, 56px);

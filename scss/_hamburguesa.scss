@@ -15,6 +15,10 @@
   z-index: 1000;
 
   
+  @include mediaquery(992px){
+    display: none;
+  }  
+
   div{
     @include basicos(80%,15%,0);
     background-color: $colorsecundario;

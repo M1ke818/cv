@@ -38,3 +38,9 @@
   grid-template-columns: $columnas;
   grid-template-rows: $filas;
 }
+
+@mixin mediaquery($min){
+  @media screen and (min-width:$min) {
+    @content;
+  }
+}
