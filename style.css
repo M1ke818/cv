@@ -343,6 +343,39 @@
   color: #91F2E9;
 }
 
+/* ------------------LETRAS-------------------- */
+/* ------------------COLORES-------------------- */
+.contacto {
+  width: 100vw;
+  height: 100vh;
+  padding: 3.5rem 1rem 1rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, 10%);
+  color: #275950;
+  background-color: #91F2E9;
+}
+.contacto .contacto__titulo {
+  letter-spacing: clamp(1rem, 4vw, 1.7rem);
+  grid-column: span 12;
+  grid-row: span 2;
+  align-self: center;
+}
+.contacto .contacto__contenedor-enlaces {
+  grid-column: span 10;
+  grid-row: 3/10;
+  display: flex;
+  flex-flow: row wrap;
+  font-size: clamp(6rem, 20vw, 8rem);
+}
+.contacto .contacto__contenedor-enlaces .contacto__enlace {
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 50%;
+}
+
 html {
   box-sizing: border-box;
   margin: 0;

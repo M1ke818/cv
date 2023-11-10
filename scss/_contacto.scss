@@ -1,0 +1,32 @@
+@import './variables';
+@import './mixins';
+
+.contacto{
+  @include contenedor;
+  @include grid(repeat(10,10%),repeat(10,10%));
+  color: $colorsecundario;
+  background-color: $colorprimario;
+
+  .contacto__titulo{
+    letter-spacing: clamp(1rem,4vw,1.7rem);
+    grid-column: span 12;
+    grid-row: span 2;
+    align-self: center;
+  }
+    
+  .contacto__contenedor-enlaces{
+    grid-column: span 10;
+    grid-row: 3/10;
+    @include flex(row,wrap);
+    font-size: clamp(6rem,20vw,8rem);
+    
+    .contacto__enlace{
+      color: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      width: 50%;
+    }
+  }
+
+}

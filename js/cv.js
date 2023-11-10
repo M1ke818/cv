@@ -69,7 +69,6 @@ export default function cv(iconos,modal,btncerrar){
       }
 
 
-
       fetch("./baseDatos.json")
       .then(res=>res.ok?res.json():Promise.reject(res))
       .then(json=>{
