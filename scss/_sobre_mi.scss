@@ -66,3 +66,10 @@
 
   }
 }
+
+
+.sobre-mi{
+  @include mediaquery(992px){
+    
+  }
+}
