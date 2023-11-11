@@ -242,7 +242,7 @@
   text-align: center;
 }
 .sobre-mi .sobre-mi__lista li:nth-child(3), .sobre-mi .sobre-mi__lista li:nth-child(2), .sobre-mi .sobre-mi__lista li:nth-child(1) {
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.5rem;
   border-radius: 1rem;
 }
 .sobre-mi .sobre-mi__lista li:nth-child(3) b, .sobre-mi .sobre-mi__lista li:nth-child(2) b, .sobre-mi .sobre-mi__lista li:nth-child(1) b {
@@ -263,6 +263,56 @@
   grid-row: 3/4;
 }
 
+/* -------------------------------------------media query 992------------------ */
+@media screen and (min-width: 992px) {
+  .sobre-mi {
+    background-image: url(./assets/panoramica_miguel_1400w.png);
+    background-blend-mode: luminosity;
+    background-repeat: no-repeat;
+    background-size: auto 100vh;
+    background-position: 100% 0;
+    color: #F0FFFF;
+  }
+  .sobre-mi .sobre-mi__titulo {
+    grid-column: 7/13;
+    letter-spacing: 2rem;
+  }
+  .sobre-mi .sobre-mi__figure {
+    grid-column: 8/12;
+    grid-row: 3/5;
+    width: 35%;
+  }
+  .sobre-mi .sobre-mi__figure img {
+    border-radius: 2rem 0 2rem 0;
+  }
+  .sobre-mi .sobre-mi__nombre {
+    grid-column: 7/13;
+    grid-row: 5/6;
+    color: #275950;
+    text-shadow: 2px 2px 5px #41BFB3, -2px 2px 5px #41BFB3, 2px -2px 5px #41BFB3;
+    padding: 0.5rem 0.5rem;
+  }
+  .sobre-mi .sobre-mi__lista {
+    grid-column: 8/13;
+    grid-row: 8/12;
+  }
+  .sobre-mi .sobre-mi__lista li:nth-child(1) {
+    background-color: transparent;
+    text-shadow: 2px 2px 5px #41BFB3, -2px 2px 5px #41BFB3, 2px -2px 5px #41BFB3;
+    color: #91F2E9;
+  }
+  .sobre-mi .sobre-mi__lista li:nth-child(2) {
+    background-color: transparent;
+    text-shadow: 2px 2px 5px #41BFB3, -2px 2px 5px #41BFB3, 2px -2px 5px #41BFB3;
+  }
+  .sobre-mi .sobre-mi__lista li:nth-child(3) {
+    background-color: transparent;
+    color: #91F2E9;
+    text-shadow: 2px 2px 5px #41BFB3, -2px 2px 5px #41BFB3, 2px -2px 5px #41BFB3;
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+}
 /* ------------------LETRAS-------------------- */
 /* ------------------COLORES-------------------- */
 .cv .cv__otros, .cv .cv__cursos, .cv .cv__idiomas {
