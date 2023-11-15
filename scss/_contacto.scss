@@ -30,3 +30,31 @@
   }
 
 }
+
+/* -------------------mediaquery 992px------------------ */
+
+@include mediaquery(992px){
+  .contacto{
+    .contacto__titulo{
+      letter-spacing: clamp(3rem,5vw,4rem);
+    }
+    
+    .contacto__contenedor-enlaces{
+      grid-column: 2/10;
+      grid-row: 3/10;
+      justify-content: center;
+      font-size: clamp(3rem,10vw,4rem);
+      width: 100%;
+      flex-flow: row wrap; 
+      
+      .contacto__enlace{
+        width: 20%;
+        align-items: center;
+      }
+      
+      #enlace--maps{
+        width: 70%;
+      }
+    } 
+  }
+}

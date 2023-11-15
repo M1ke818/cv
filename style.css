@@ -511,6 +511,27 @@
   width: 50%;
 }
 
+/* -------------------mediaquery 992px------------------ */
+@media screen and (min-width: 992px) {
+  .contacto .contacto__titulo {
+    letter-spacing: clamp(3rem, 5vw, 4rem);
+  }
+  .contacto .contacto__contenedor-enlaces {
+    grid-column: 2/10;
+    grid-row: 3/10;
+    justify-content: center;
+    font-size: clamp(3rem, 10vw, 4rem);
+    width: 100%;
+    flex-flow: row wrap;
+  }
+  .contacto .contacto__contenedor-enlaces .contacto__enlace {
+    width: 20%;
+    align-items: center;
+  }
+  .contacto .contacto__contenedor-enlaces #enlace--maps {
+    width: 70%;
+  }
+}
 html {
   box-sizing: border-box;
   margin: 0;
